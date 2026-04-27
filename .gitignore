@@ -1,0 +1,23 @@
+cat > .gitignore << 'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+venv/
+
+# Excel temp files
+~$*.xls*
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/settings.json
+
+# Large data files — keep samples, ignore real client data
+data/test/*.xls
+data/test/*.xlsx
+EOF
